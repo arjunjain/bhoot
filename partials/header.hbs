@@ -1,0 +1,5 @@
+<section id="banner" class="{{#if @blog.cover}}"  style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+	{{#if @blog.logo}}<a class="logo_bhoot" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+	<h2><a title="{{@blog.title}}" href='{{@blog.url}}'>{{{@blog.title}}}</a></h2>
+	<p><a title="{{@blog.title}}" href='{{@blog.url}}'>{{@blog.description}}</a></p>
+</section>

@@ -1,16 +1,17 @@
 {{!< default}}
-{{> header}}
-
+{{>header}}
 <section id="main" class="container">
-{{#foreach posts columns=2}}	
-	{{#if @rowStart}}
-	<div class="row">
-	{{/if}}
+	<header class="tag-archive-header"><h1>You are browsing: {{tag.name}}</h1></header>
+
+	{{#foreach posts columns=2}}	
+		{{#if @rowStart}}
+		<div class="row">
+		{{/if}}
 		<div class="6u 12u(2)">
 			<section class="box special">
 				{{#if image}}
-					<span class="image featured"><img src="{{image}}" alt="{{title}}"/></span>
 					<h3><a href="{{url}}" title="{{title}}">{{title}}</a></h3>
+					<span class="image featured"><img src="{{image}}" alt="{{title}}"/></span>
 					<div class="post_content" itemprop="articleBody">{{excerpt characters="200"}}</div>
 				{{else}}
 					<h3><a href="{{url}}" title="{{title}}">{{title}}</a></h3>
@@ -23,24 +24,24 @@
 				    <li><a class="icon fa-google-plus fa-1x" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="label">Google+</span></a></li>
 					<li><a class="icon fa-twitter fa-1x" target="_blank" href="http://twitter.com/intent/tweet/?text={{title}}&url={{url absolute="true"}}"><span class="label">Twitter</span></a></li>
 				    <li><a class="icon fa-facebook fa-1x" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"><span class="label">Facebook</span></a></li>
-   	 			</ul>
-   	 			<div class="tags">
-   	 				{{tags separator=" | " autolink="true" prefix="Tagged in: "}}
-   	 			</div>
-   	 			<div class="author-desc">
-   	 					Posted on <time class="date_uber" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time> By <span itemprop="author">{{author}}</span>
-   	 			</div>
+	   	 		</ul>
+	   	 		<div class="tags">
+	   	 			{{tags separator=" | " autolink="true" prefix="Tagged in: "}}
+	   	 		</div>
+	   	 		<div class="author-desc">
+	   	 			Posted on <time class="date_uber" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time> By <span itemprop="author">{{author}}</span>
+	   	 		</div>
 			</section>
 		</div>
-	{{#if @rowEnd}}
-	</div>
-	{{/if}}	
-{{/foreach}}
-<div class="clear"></div>	
-
-{{#if pagination}}
-{{{pagination}}}
-{{/if}}
+		{{#if @rowEnd}}
+		</div>
+		{{/if}}	
+	{{/foreach}}
+	<div class="clear"></div>	
+	
+	{{#if pagination}}
+	{{{pagination}}}
+	{{/if}}
 </section>
 
 {{> footer}}
