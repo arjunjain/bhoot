@@ -1,13 +1,22 @@
 {{!< default}}
 {{>header}}
 <section id="main" class="container">
-	<section class="box special">
-		<h2>You are browsing: {{tag.name}}</h2>
-		<ul class="icons">
-			<li><i class="fa fa-bar-chart"></i> {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}}</span></li>
-			<li><i class="fa fa-rss"></i> <a href="{{@blog.url}}/tag/{{tag.slug}}/rss/">Subscribe</a></li>
-		</ul>
-	</section>
+	{{#author}}
+	    <section class="box special">
+	        {{#if image}}
+		       	<img class="icon major " src="{{image}}" alt="{{name}}'s Picture" />
+		   	{{/if}}
+	        {{#if name}}<h2>{{name}}</h2>{{/if}}
+	        {{#if bio}}<p>{{bio}}</p>{{/if}}
+	        <ul class="icons">
+	            {{#if location}}<li><i class="fa fa-map-marker"></i> {{location}}</li>{{/if}}
+	            {{#if website}}<li><i class="fa fa-link"></i> <a href="{{website}}">{{website}}</a></li>{{/if}}
+	            <li><i class="fa fa-bar-chart"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span></li>
+	            <li><i class="fa fa-rss"></i> <a href="{{url}}rss/">Subscribe</a></li>
+	        </ul>
+	    </section>
+	{{/author}}
+
 	{{#foreach posts columns=2}}	
 		{{#if @rowStart}}
 		<div class="row">
@@ -48,5 +57,4 @@
 	{{{pagination}}}
 	{{/if}}
 </section>
-
 {{> footer}}
