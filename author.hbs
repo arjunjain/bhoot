@@ -1,5 +1,6 @@
 {{!< default}}
 {{>header}}
+
 <section id="main" class="container">
 	{{#author}}
 	    <section class="box special">
@@ -35,9 +36,9 @@
 					<li><a href="{{url}}" class="button alt">Read More</a></li>
 				</ul>
 				<ul class="icons">
-				    <li><a class="icon fa-google-plus fa-1x" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="label">Google+</span></a></li>
-					<li><a class="icon fa-twitter fa-1x" target="_blank" href="http://twitter.com/intent/tweet/?text={{title}}&url={{url absolute="true"}}"><span class="label">Twitter</span></a></li>
-				    <li><a class="icon fa-facebook fa-1x" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"><span class="label">Facebook</span></a></li>
+				    <li><a class="icon fa-google-plus fa-1x" rel="external nofollow" target="_blank" onclick="return ss_plugin_loadpopup_js_ghost(this);"  href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="label">Google+</span></a></li>
+					<li><a class="icon fa-twitter fa-1x" rel="external nofollow" target="_blank" onclick="return ss_plugin_loadpopup_js_ghost(this);"  href="http://twitter.com/intent/tweet/?text={{title}}&url={{url absolute="true"}}"><span class="label">Twitter</span></a></li>
+				    <li><a class="icon fa-facebook fa-1x" rel="external nofollow" target="_blank" onclick="return ss_plugin_loadpopup_js_ghost(this);" href="http://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"><span class="label">Facebook</span></a></li>
 	   	 		</ul>
 	   	 		<div class="tags">
 	   	 			{{tags separator=" | " autolink="true" prefix="Tagged in: "}}
