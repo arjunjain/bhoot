@@ -87,6 +87,7 @@ input[type="radio"] + label:before {border-radius: 100%;}
 .box.special {text-align: center;}
 .box .image.featured {border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0;display: block;	margin: 3em 0 3em -1em;position: relative;width: calc(100% + 2em);}
 .post_content{margin:2em 0;text-align: justify;}
+.post_content img{max-width: 100%;}
 .box .image.featured img {border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0;display: block;	width: 100%;max-height:300px;}
 .box .image.featured:first-child {border-radius: 6px 6px 0 0;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;margin-bottom: 3em;margin-top: -1em;}
 .box .image.featured:first-child img {border-radius: 6px 6px 0 0;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;}
