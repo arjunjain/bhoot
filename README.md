@@ -43,6 +43,6 @@ If you need to change some wording, etc. you can edit the files with `.hbs` exte
 
 © 2014 Arjun Jain.
 
-Source code released under the GPL v3.0- license. See `LICENSE` for details.
+Source code released under the GPL v3.0 license. See `LICENSE` for details.
 
 [Font Awesome](https://github.com/FortAwesome/Font-Awesome/) font (`assets/fonts/fontawesome-webfont.woff`) is licensed under the [SIL Open Font License 1.1](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL). 
