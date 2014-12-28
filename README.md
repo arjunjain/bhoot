@@ -2,6 +2,8 @@
 
 Theme for the Ghost blogging platform. Source code available at [https://github.com/arjunjain/bhoot](https://github.com/arjunjain/bhoot).
 
+Demo [http://ghost.arjunjain.info/](http://ghost.arjunjain.info/)
+ 
 [![Preview](/screenshot-preview.png?raw=true)](/screenshot.png?raw=true)
 
 ## Installation
